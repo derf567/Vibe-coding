@@ -354,19 +354,22 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
     color: var(--white);
     padding: 2rem;
     transform: translateY(100%);
     transition: var(--transition);
+    opacity: 0;
 }
 
 .portfolio-item:hover .portfolio-overlay {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .portfolio-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: brightness(0.8);
 }
 
 .portfolio-overlay h3 {
@@ -479,9 +482,28 @@ a {
 
 /* Footer */
 .footer {
-    background: var(--text-dark);
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
     color: var(--white);
     padding: 3rem 0 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.03) 35px, rgba(255,255,255,.03) 70px);
+    pointer-events: none;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 1;
 }
 
 .footer-content {

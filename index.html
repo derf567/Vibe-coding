@@ -3,78 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LANIZOL - Profesionálne hydroizolácie plochých striech, balkónov, terás a základových dosiek. Kvalitné služby za rozumné ceny.">
-    <meta name="keywords" content="hydroizolácie, plochá strecha, balkón, terasa, základová doska, LANIZOL">
-    <title>LANIZOL - Hydroizolácie plochých striech | Profesionálne služby</title>
+    <meta name="description" content="LANIZOL - Profesionálne hydroizolácie plochých striech, balkónov, terás a základových dosiek. Kvalitné služby s dlhoročnou zárukou. Kontaktujte nás ešte dnes!">
+    <meta name="keywords" content="hydroizolácie, plochá strecha, balkón, terasa, základová doska, LANIZOL, tesárske práce, oprava strechy">
+    <meta name="author" content="LANIZOL">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="LANIZOL - Profesionálne hydroizolácie striech | Kvalitné služby">
+    <meta property="og:description" content="Spoľahlivé riešenia pre ochranu vašej nehnuteľnosti pred vlhkosťou a zatečením. Kontaktujte nás!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sk_SK">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>LANIZOL - Profesionálne hydroizolácie | Spoľahlivá ochrana vašej nehnuteľnosti</title>
+    <link rel="canonical" href="https://lanizol.sk/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "LANIZOL",
+        "description": "Profesionálne hydroizolácie plochých striech, balkónov, terás a základových dosiek",
+        "url": "https://lanizol.sk/",
+        "telephone": "+421948334711",
+        "email": "lanizol249@gmail.com",
+        "address": {
+            "addressLocality": "Slovakia",
+            "addressCountry": "SK"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Slovakia"
+        },
+        "priceRange": "€€",
+        "openingHours": "Mo-Fr 07:00-18:00",
+        "image": "https://lanizol.sk/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+421948334711",
+            "availableLanguage": ["Slovak"]
+        },
+        "sameAs": [
+            "https://instagram.com/lanizol_hydroizolacie_striech"
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img src="images/logo.png" alt="LANIZOL Logo">
-                    <span>LANIZOL</span>
-                </div>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#home">Domov</a></li>
-                        <li><a href="#about">O nás</a></li>
-                        <li><a href="#services">Služby</a></li>
-                        <li><a href="#portfolio">Referencie</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
+                <a href="#home" class="logo">
+                    <img src="images/logo.png" alt="LANIZOL Logo" width="50" height="50">
+                    <span class="logo-text">LANIZOL</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Domov</a></li>
+                        <li><a href="#about" class="nav-link">O nás</a></li>
+                        <li><a href="#services" class="nav-link">Služby</a></li>
+                        <li><a href="#process" class="nav-link">Ako pracujeme</a></li>
+                        <li><a href="#portfolio" class="nav-link">Referencie</a></li>
+                        <li><a href="#contact" class="nav-link">Kontakt</a></li>
                     </ul>
                 </nav>
-                <div class="header-contact">
-                    <a href="tel:0948334711" class="phone">📞 0948 334 711</a>
+                <div class="header-actions">
+                    <a href="tel:0948334711" class="btn-phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>0948 334 711</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
                 </div>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h1>Profesionálne hydroizolácie plochých striech</h1>
-                <p>Spoľahlivé riešenia pre ochranu vašej nehnuteľnosti pred vlhkosťou a zatečením</p>
+                <div class="hero-badge">
+                    <span class="badge-icon">★</span>
+                    <span>Trusted by 500+ Happy Clients</span>
+                </div>
+                <h1 class="hero-title">Profesionálne <span class="highlight">hydroizolácie</span> pre vašu nehnuteľnosť</h1>
+                <p class="hero-subtitle">Spoľahlivé riešenia ochrany stavieb pred vlhkosťou a zatečením. Kvalitné materiály, profesionálny prístup a dlhodobá záruka na všetky práce.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Kontaktujte nás</a>
-                    <a href="#services" class="btn btn-secondary">Naše služby</a>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span>Bezplatná konzultácia</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline btn-lg">Naše realizácie</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Rokov skúseností</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Realizovaných projektov</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Spokojných klientov</span>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <h2>O spoločnosti LANIZOL</h2>
+            <div class="section-header">
+                <span class="section-tag">O nás</span>
+                <h2 class="section-title">Vaša dôveryhodná voľba pre <span class="highlight">hydroizolácie</span></h2>
+                <p class="section-subtitle">Sme odborníci na hydroizolácie s dlhoročnými skúsenosťami. Špecializujeme sa na komplexné riešenia ochrany stavieb pred vlhkosťou.</p>
+            </div>
             <div class="about-content">
+                <div class="about-image">
+                    <img src="images/Waterproofing of a flat roof.png" alt="LANIZOL - Profesionálne hydroizolácie" loading="lazy">
+                    <div class="about-image-accent"></div>
+                </div>
                 <div class="about-text">
-                    <p>Sme odborníci na hydroizolácie s dlhoročnými skúsenosťami v odbore. Špecializujeme sa na komplexné riešenia ochrany stavieb pred vlhkosťou.</p>
-                    <p>Naša firma poskytuje kvalitné služby v oblasti hydroizolácií plochých striech, balkónov, terás a základových dosiek. Používame overené materiály a moderné technológie.</p>
+                    <h3>Prečo si vybrať LANIZOL?</h3>
+                    <p>Naša firma poskytuje kvalitné služby v oblasti hydroizolácií plochých striech, balkónov, terás a základových dosiek. Používame overené materiály od renomovaných výrobcov a moderné technológie, ktoré zaručujú dlhodobú ochranu vašej nehnuteľnosti.</p>
+                    <p>Sme tím certifikovaných odborníkov, ktorí kladú dôraz na kvalitu, spoľahlivosť a spokojnosť zákazníkov. Každý projekt pristupujeme individuálne a ponúkame riešenia na mieru.</p>
                     <div class="about-features">
-                        <div class="feature">
-                            <span class="icon">✓</span>
-                            <h3>Odbornosť</h3>
-                            <p>Certifikovaní špecialisti</p>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Certifikovaní špecialisti</h4>
+                                <p>Tím s certifikáciou a dlhoročnou praxou</p>
+                            </div>
                         </div>
-                        <div class="feature">
-                            <span class="icon">✓</span>
-                            <h3>Kvalita</h3>
-                            <p>Prémiové materiály</p>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Prémiové materiály</h4>
+                                <p>Len overené a kvalitné materiál</p>
+                            </div>
                         </div>
-                        <div class="feature">
-                            <span class="icon">✓</span>
-                            <h3>Záruka</h3>
-                            <p>Dlhodobá záruka na práce</p>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Dlhodobá záruka</h4>
+                                <p>Záruka na všetky vykonané práce</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Rýchla realizácia</h4>
+                                <p>Flexibilné termíny a rýchle dodávky</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,157 +211,528 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section class="services" id="services">
         <div class="container">
-            <h2>Naše služby</h2>
+            <div class="section-header">
+                <span class="section-tag">Naše služby</span>
+                <h2 class="section-title">Komplexné riešenia <span class="highlight">hydroizolácií</span></h2>
+                <p class="section-subtitle">Poskytujeme široký spekter služieb pre ochranu vašej nehnuteľnosti pred vlhkosťou</p>
+            </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <span class="service-number">01</span>
                     </div>
                     <h3>Hydroizolácie plochých striech</h3>
-                    <p>Komplexné riešenia pre ploché strechy bytových a priemyselných budov. Moderné materiály a technológie.</p>
+                    <p>Komplexné riešenia pre ploché strechy bytových a priemyselných budov. Používame moderné materiály a technológie pre dlhodobú ochranu.</p>
+                    <ul class="service-list">
+                        <li>PVC a TPO membrány</li>
+                        <li>Tekutá hydroizolácia</li>
+                        <li>Rekonštrukcie striech</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <span class="service-number">02</span>
                     </div>
                     <h3>Hydroizolácie balkónov</h3>
-                    <p>Ochrana balkónov pred zatečením a vlhkosťou. Dlhodobé a spoľahlivé riešenia.</p>
+                    <p>Ochrana balkónov pred zatečením a vlhkosťou. Dlhodobé a spoľahlivé riešenia pre bytové aj rodinné domy.</p>
+                    <ul class="service-list">
+                        <li>Polyuretánové systémy</li>
+                        <li>Obkladanie dlažbou</li>
+                        <li>Opravy existujúcich izolácií</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                        </svg>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <span class="service-number">03</span>
                     </div>
                     <h3>Hydroizolácie terás</h3>
-                    <p>Profesionálna izolácia terás s dôrazom na kvalitu a estetiku.</p>
+                    <p>Profesionálna izolácia terás s dôrazom na kvalitu a estetiku. Riešenia pre terasy rodinných domov aj komerčné objekty.</p>
+                    <ul class="service-list">
+                        <li>Pochoďzie hydroizolácie</li>
+                        <li>Terasy s dlažbou</li>
+                        <li>Zelené strechy</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <span class="service-number">04</span>
                     </div>
-                    <h3>Hydroizolácie základových dosiek</h3>
-                    <p>Ochrana základov budov pred zemnou vlhkosťou a spodnou vodou.</p>
+                    <h3>Hydroizolácie základov</h3>
+                    <p>Ochrana základov budov pred zemnou vlhkosťou a spodnou vodou. Spoľahlivá ochrana celej stavby.</p>
+                    <ul class="service-list">
+                        <li>Horizontálna izolácia</li>
+                        <li>Vertikálna izolácia</li>
+                        <li>Sanačné práce</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                        </svg>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <span class="service-number">05</span>
                     </div>
                     <h3>Tesárske práce</h3>
-                    <p>Súvisiace tesárske práce a kompletné riešenia strešných konštrukcií.</p>
+                    <p>Súvisiace tesárske práce a kompletné riešenia strešných konštrukcií. Všetko pod jednou strechou.</p>
+                    <ul class="service-list">
+                        <li>Nové krovy</li>
+                        <li>Opravy krovov</li>
+                        <li>Prestrešenia</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v6m0 6v6"></path>
-                            <path d="M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24"></path>
-                            <path d="M1 12h6m6 0h6"></path>
-                            <path d="M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"></path>
-                        </svg>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                            </svg>
+                        </div>
+                        <span class="service-number">06</span>
                     </div>
                     <h3>Opravy a údržba</h3>
-                    <p>Opravy existujúcich hydroizolácií a pravidelná údržba.</p>
+                    <p>Opravy existujúcich hydroizolácií a pravidelná údržba. Predĺžte životnosť vašej strechy.</p>
+                    <ul class="service-list">
+                        <li>Diagnostika</li>
+                        <li>Opravy</li>
+                        <li>Pravidelná údržba</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ako pracujeme</span>
+                <h2 class="section-title">Náš <span class="highlight">pracovný proces</span></h2>
+                <p class="section-subtitle">Jasný a transparentný postup pre každý projekt</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-right" data-aos-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Kontakt a konzultácia</h3>
+                        <p>Kontaktujte nás telefonicky alebo emailom. Po dohode prídeme na obhliadku objektu a zhodnotíme stav.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Zhodnotenie a návrh</h3>
+                        <p>Vypracujeme detailný návrh riešenia vrátane cenovej ponuky a časového harmonogramu prác.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Realizácia</h3>
+                        <p>Po schválení ponuky pristúpime k realizácii. Práce vykonávame profesionálne a v dohodnutých termínoch.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Odovzdanie a záruka</h3>
+                        <p>Po dokončení prác odovzdáme dielo a poskytneme záruku na vykonané práce aj použité materiály.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="why-us-content">
+                <div class="why-us-text">
+                    <span class="section-tag">Prečo my</span>
+                    <h2>Dôverujte <span class="highlight">skúsenostiam</span></h2>
+                    <p>Sme tu pre vás, aby sme vašej nehnuteľnosti poskytli tú najlepšiu možnú ochranu. Naša firma kombinuje tradičné remeselné hodnoty s modernými technológiami.</p>
+                    <div class="why-us-list">
+                        <div class="why-us-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Individuálny prístup ku každému klientovi</span>
+                        </div>
+                        <div class="why-us-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Transparentné ceny bez skrytých poplatkov</span>
+                        </div>
+                        <div class="why-us-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Záruka kvality na všetky práce</span>
+                        </div>
+                        <div class="why-us-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Rýchla reakcia a flexibilné termíny</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Objedvať konzultáciu</a>
+                </div>
+                <div class="why-us-image">
+                    <img src="images/Waterproofing of a roof.png" alt="Prečo si vybrať LANIZOL" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2>Naše referencie</h2>
-            <p class="portfolio-subtitle">Pozrite si ukážky našich realizovaných projektov</p>
+            <div class="section-header">
+                <span class="section-tag">Naše referencie</span>
+                <h2 class="section-title">Úspešne <span class="highlight">realizované projekty</span></h2>
+                <p class="section-subtitle">Pozrite si ukážky našich realizovaných projektov</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Všetky</button>
+                <button class="filter-btn" data-filter="flat-roof">Ploché strechy</button>
+                <button class="filter-btn" data-filter="balcony">Balkóny</button>
+                <button class="filter-btn" data-filter="terrace">Terasy</button>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="images/Waterproofing of a flat roof.png" alt="Hydroizolácia plochej strechy">
+                <div class="portfolio-item" data-category="flat-roof">
+                    <img src="images/Waterproofing of a flat roof.png" alt="Hydroizolácia plochej strechy" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h3>Plochá strecha</h3>
-                        <p>Bytový dom</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Plochá strecha</span>
+                            <h3>Bytový dom</h3>
+                            <p>Kompletná rekonštrukcia hydroizolácie</p>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/Waterproofing of a balcony.png" alt="Hydroizolácia balkóna">
+                <div class="portfolio-item" data-category="balcony">
+                    <img src="images/Waterproofing of a balcony.png" alt="Hydroizolácia balkóna" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h3>Balkón</h3>
-                        <p>Rodinný dom</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Balkón</span>
+                            <h3>Rodinný dom</h3>
+                            <p>Nová hydroizolácia s dlažbou</p>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/Waterproofing of a terrace.png" alt="Hydroizolácia terasy">
+                <div class="portfolio-item" data-category="terrace">
+                    <img src="images/Waterproofing of a terrace.png" alt="Hydroizolácia terasy" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h3>Terasa</h3>
-                        <p>Rekreačný objekt</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Terasa</span>
+                            <h3>Rekreačný objekt</h3>
+                            <p>Tekutá hydroizolácia</p>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/Waterproofing of a roof.png" alt="Hydroizolácia strechy">
+                <div class="portfolio-item" data-category="flat-roof">
+                    <img src="images/Waterproofing of a roof.png" alt="Hydroizolácia strechy" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h3>Strecha</h3>
-                        <p>Priemyselný objekt</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Strecha</span>
+                            <h3>Priemyselný objekt</h3>
+                            <p>PVC membrána</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <p>Potrebujete poradiť s vaším projektom?</p>
+                <a href="#contact" class="btn btn-primary">Kontaktujte nás</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Referencie</span>
+                <h2 class="section-title">Čo hovovia <span class="highlight">naši klienti</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"S firmou LANIZOL sme boli veľmi spokojní. Profesionálny prístup, dodržanie termínov a vynikajúca kvalita práce. Strecha po rekonštrukcii už nekvapká a izolácia funguje perfektne."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Martin K.</h4>
+                            <span>Rodinný dom, Bratislava</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Výborná komunikácia a flexibilita. Technik prišiel na obhliadku ihneď a návrh riešenia bol pripravený v rekordnom čase. Hydroizoláciu balkóna urobili kvalitne a za rozumnú cenu."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>Jana P.</h4>
+                            <span>Bytový dom, Košice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Odporúčam každému, kto hľadá spoľahlivého partnera pre hydroizolácie. Firma LANIZOL splnila všetky naše očakávania - kvalita, spoľahlivosť a profesionálny prístup."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <h4>Peter H.</h4>
+                            <span>Rekreačný objekt, Liptovský Mikuláš</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- FAQ Section -->
+    <section class="faq">
         <div class="container">
-            <h2>Kontaktujte nás</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>LANIZOL</h3>
-                    <div class="contact-item">
-                        <strong>Kontaktná osoba:</strong>
-                        <p>Andrej Lanovec</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Telefón:</strong>
-                        <p><a href="tel:0948334711">0948 334 711</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Email:</strong>
-                        <p><a href="mailto:lanizol249@gmail.com">lanizol249@gmail.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Sledujte nás:</strong>
-                        <p><a href="https://instagram.com/lanizol_hydroizolacie_striech" target="_blank">Instagram</a></p>
+            <div class="section-header">
+                <span class="section-tag">Často kladené otázky</span>
+                <h2 class="section-title">Zodpovieme vaše <span class="highlight">otázky</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Ako dlho trvá realizácia hydroizolácie plochej strechy?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Čas realizácie závisí od veľkosti a stavu objektu. Priemerne trvá hydroizolácia plochej strechy rodinného domu 2-5 pracovných dní. Pri väčších objektoch vás budeme informovať o presnom termíne pri vypracovaní ponuky.</p>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Meno a priezvisko *</label>
-                            <input type="text" id="name" name="name" required>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Akú záruku poskytujete na hydroizolácie?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Poskytujeme záruku na vykonané práce až 10 rokov, na použité materiály záruku od výrobcu (zvyčajne 10-25 rokov). Záručné podmienky sú špecifikované v zmluve o dielo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Aké materiály používate pre hydroizolácie?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Používame len kvalitné a overené materiály od renomovaných výrobcov: PVC membrány, TPO membrány, polyuretánové systémy, tekutú hydroizoláciu a bitúmenové pásy. Výber materiálu závisí od konkrétneho projektu a požiadaviek zákazníka.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Realizujete aj menšie opravy alebo len kompletné hydroizolácie?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Áno, realizujeme aj menšie opravy a lokálne sanácie. Či už potrebujete opraviť unikajúci spoj, vymeniť časť hydroizolácie alebo vykonať preventívnu údržbu, radi vám pomôžeme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area">
+        <div class="container">
+            <div class="service-area-content">
+                <div class="service-area-info">
+                    <span class="section-tag">Servisné územie</span>
+                    <h2>Pôsobíme <span class="highlight">celom Slovensku</span></h2>
+                    <p>Naše služby poskytujeme po celom Slovensku. Či už ste z Bratislavy, Košíc, Žiliny alebo ktoréhokoľvek iného mesta, radi vám pomôžeme s vašim projektom.</p>
+                    <div class="service-cities">
+                        <div class="city-tag">Bratislava</div>
+                        <div class="city-tag">Košice</div>
+                        <div class="city-tag">Žilina</div>
+                        <div class="city-tag">Banská Bystrica</div>
+                        <div class="city-tag">Nitra</div>
+                        <div class="city-tag">Prešov</div>
+                        <div class="city-tag">Trenčín</div>
+                        <div class="city-tag">Martin</div>
+                    </div>
+                </div>
+                <div class="service-area-map">
+                    <div class="map-placeholder">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Celé Slovensko</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Potrebujete <span class="highlight">hydroizoláciu</span>?</h2>
+                <p>Kontaktujte nás ešte dnes a získajte bezplatnú konzultáciu a cenovú ponuku na mieru vášho projektu.</p>
+                <div class="cta-buttons">
+                    <a href="tel:0948334711" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        Zavolať teraz
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-lg">Poslať správu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kontakt</span>
+                <h2 class="section-title">Spojte sa s <span class="highlight">nami</span></h2>
+                <p class="section-subtitle">Tešíme sa na vašu správu. Radi vám poradíme s vaším projektom.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="contact-details">
+                            <h4>Telefón</h4>
+                            <a href="tel:0948334711">0948 334 711</a>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Telefón</label>
-                            <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:lanizol249@gmail.com">lanizol249@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Kontaktná osoba</h4>
+                            <p>Andrej Lanovec</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <a href="https://instagram.com/lanizol_hydroizolacie_striech" target="_blank" rel="noopener">@lanizol_hydroizolacie_striech</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Meno a priezvisko *</label>
+                                <input type="text" id="name" name="name" required placeholder="Vaše meno">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="vas@email.sk">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefón</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+421 XXX XXX XXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Služba</label>
+                                <select id="service" name="service">
+                                    <option value="">Vyberte službu</option>
+                                    <option value="flat-roof">Hydroizolácia strechy</option>
+                                    <option value="balcony">Hydroizolácia balkóna</option>
+                                    <option value="terrace">Hydroizolácia terasy</option>
+                                    <option value="foundation">Hydroizolácia základov</option>
+                                    <option value="carpentry">Tesárske práce</option>
+                                    <option value="repair">Oprava a údržba</option>
+                                    <option value="other">Iné</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="message">Správa *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder="Opíšte váš projekt alebo otázku..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Odoslať správu</button>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Odoslať správu</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
                     </form>
                     <div id="formMessage" class="form-message"></div>
                 </div>
@@ -245,19 +744,48 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>LANIZOL</h4>
-                    <p>Profesionálne hydroizolácie</p>
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <img src="images/logo.png" alt="LANIZOL Logo" width="50" height="50">
+                        <span>LANIZOL</span>
+                    </a>
+                    <p>Profesionálne hydroizolácie pre vašu nehnuteľnosť. Kvalitné služby s dlhoročnou zárukou.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/lanizol_hydroizolacie_striech" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Kontakt</h4>
-                    <p>Tel: 0948 334 711</p>
-                    <p>Email: lanizol249@gmail.com</p>
-                </div>
-                <div class="footer-section">
+                <div class="footer-links">
                     <h4>Služby</h4>
-                    <p>Hydroizolácie striech</p>
-                    <p>Balkóny a terasy</p>
+                    <ul>
+                        <li><a href="#services">Plochá strecha</a></li>
+                        <li><a href="#services">Balkóny</a></li>
+                        <li><a href="#services">Terasy</a></li>
+                        <li><a href="#services">Základy</a></li>
+                        <li><a href="#services">Tesárske práce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="tel:0948334711">0948 334 711</a></li>
+                        <li><a href="mailto:lanizol249@gmail.com">lanizol249@gmail.com</a></li>
+                        <li>Andrej Lanovec</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Rýchle odkazy</h4>
+                    <ul>
+                        <li><a href="#about">O nás</a></li>
+                        <li><a href="#services">Služby</a></li>
+                        <li><a href="#portfolio">Referencie</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
